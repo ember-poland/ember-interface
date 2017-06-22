@@ -2,13 +2,13 @@
   {{#paper-toolbar as |toolbar|}}
     {{#paper-toolbar-tools class="layout-row layout-align-space-between-center"}}
       <span>{{t 'projects.labels.projects'}}</span>
-      {{projects-list/add}}
+      {{projects-list/add-button}}
     {{/paper-toolbar-tools}}
   {{/paper-toolbar}}
 
   {{#paper-content}}
-    {{#each project as |projects|}}
-      {{projects-list/project}}
+    {{#each projects as |project|}}
+      {{projects-list/project project=project}}
     {{/each}}
   {{/paper-content}}
 {{/paper-sidenav}}
