@@ -8,17 +8,17 @@
   {{#menu.content width=4 as |content|}}
     {{#content.menu-item onClick="openSomething"}}
       {{paper-icon "folder-open"}}
-      <span>Import project/addon</span>
+      <span>{{t "projects.actions.import"}}</span>
     {{/content.menu-item}}
 
     {{#content.menu-item onClick="openSomething" disabled=true}}
       {{paper-icon "code"}}
-      <span>Create project</span>
+      <span>{{t "projects.actions.newProject"}}</span>
     {{/content.menu-item}}
 
     {{#content.menu-item onClick="openSomething" disabled=true}}
       {{paper-icon "code"}}
-      <span>Create addon</span>
+      <span>{{t "projects.actions.newAddon"}}</span>
     {{/content.menu-item}}
   {{/menu.content}}
 {{/paper-menu}}

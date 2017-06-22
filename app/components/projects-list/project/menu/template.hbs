@@ -6,14 +6,14 @@
   {{/menu.trigger}}
 
   {{#menu.content width=4 as |content|}}
-    {{#content.menu-item onClick="openSomething" }}
+    {{#content.menu-item onClick="openSomething"}}
       {{paper-icon "folder-open"}}
-      <span>Show in folder</span>
+      <span>{{t "projects.actions.showInFolder"}}</span>
     {{/content.menu-item}}
 
-    {{#content.menu-item onClick="openSomething" }}
+    {{#content.menu-item onClick="openSomething"}}
       {{paper-icon "code"}}
-      <span>Open in editor</span>
+      <span>{{t "projects.actions.openInEditor"}}</span>
     {{/content.menu-item}}
   {{/menu.content}}
 {{/paper-menu}}

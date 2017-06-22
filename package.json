@@ -38,6 +38,7 @@
     "ember-data": "^2.13.0",
     "ember-electron": "^2.2.2",
     "ember-export-application-global": "^2.0.0",
+    "ember-intl": "^2.28.0",
     "ember-load-initializers": "^1.0.0",
     "ember-paper": "^1.0.0-alpha.19",
     "ember-resolver": "^4.0.0",
