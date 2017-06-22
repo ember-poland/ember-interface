@@ -1,2 +1,6 @@
-{{outlet}}
-{{commands/ember-version}}
+{{#paper-sidenav-container class="inner-sidenav"}}
+  {{projects-list}}
+  {{#paper-card-content class="flex"}}
+    {{outlet}}
+  {{/paper-card-content}}
+{{/paper-sidenav-container}}

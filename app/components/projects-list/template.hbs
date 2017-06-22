@@ -1,0 +1,12 @@
+{{#paper-sidenav class="md-whiteframe-z2" lockedOpen=true}}
+  {{#paper-toolbar as |toolbar|}}
+    {{#paper-toolbar-tools class="layout-row layout-align-space-between-center"}}
+      <span>Projects</span>
+      {{projects-list/add}}
+    {{/paper-toolbar-tools}}
+  {{/paper-toolbar}}
+
+  {{#paper-content}}
+    {{projects-list/project}}
+  {{/paper-content}}
+{{/paper-sidenav}}

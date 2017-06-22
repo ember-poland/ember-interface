@@ -1,0 +1,10 @@
+{{#paper-card as |card|}}
+  {{#card.title as |title|}}
+    {{#title.text as |text|}}
+      {{#text.headline class="h5"}}ember-initials{{/text.headline}}
+      {{#text.subhead}}v2.1.2{{/text.subhead}}
+    {{/title.text}}
+
+    {{projects-list/project/menu}}
+  {{/card.title}}
+{{/paper-card}}

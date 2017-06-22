@@ -18,12 +18,10 @@
     "babel-plugin-transform-async-to-generator": "^6.24.1",
     "babel-preset-env": "^1.5.2",
     "babel-preset-react": "^6.24.1",
-    "bootstrap-sass": "^3.3.7",
     "broccoli-asset-rev": "^2.4.5",
     "devtron": "^1.4.0",
     "electron-prebuilt-compile": "1.6.11",
     "ember-ajax": "^3.0.0",
-    "ember-bootstrap": "^1.0.0-beta.2",
     "ember-cli": "2.13.2",
     "ember-cli-app-version": "^3.0.0",
     "ember-cli-babel": "^6.0.0",
@@ -41,9 +39,9 @@
     "ember-electron": "^2.2.2",
     "ember-export-application-global": "^2.0.0",
     "ember-load-initializers": "^1.0.0",
+    "ember-paper": "^1.0.0-alpha.19",
     "ember-resolver": "^4.0.0",
     "ember-source": "~2.13.0",
-    "ember-welcome-page": "^3.0.0",
     "loader.js": "^4.2.3"
   },
   "engines": {
