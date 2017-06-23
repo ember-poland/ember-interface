@@ -6,10 +6,7 @@
   {{/menu.trigger}}
 
   {{#menu.content width=4 as |content|}}
-    {{#content.menu-item onClick="openSomething"}}
-      {{paper-icon "folder-open"}}
-      <span>{{t "projects.actions.import"}}</span>
-    {{/content.menu-item}}
+    {{projects-list/add-button/import content=content}}
 
     {{#content.menu-item onClick="openSomething" disabled=true}}
       {{paper-icon "code"}}

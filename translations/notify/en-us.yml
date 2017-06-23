@@ -1,0 +1,7 @@
+notify:
+  projects:
+    import:
+      incorrectProject: "This project can't be imported!"
+      imported: "Ember project has been imported"
+    remove:
+      success: "Project has been removed from the list"
