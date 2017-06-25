@@ -1,6 +1,28 @@
-@import "ember-bootstrap/bootstrap";
+$primary: "light-blue";
+$accent: "red";
+$warn: "pink";
+
+$dark-contrast-color: rgba(255, 255, 255, 0.87);
+
+@import 'ember-paper';
 
 body {
   background-image: url('/images/background.svg');
-  background-position: bottom;
+  background-position: top;
+
+  &>.ember-view {
+  height: 100%;
+  }
+}
+
+.inner-sidenav {
+  height: 100%;
+
+  md-sidenav {
+    background-color: rgba(255,255,255,0.4);
+
+    md-content {
+      background-color: transparent;
+    }
+  }
 }

@@ -1,0 +1,24 @@
+{{#paper-menu as |menu|}}
+  {{#menu.trigger}}
+    {{#paper-button iconButton=true}}
+      {{paper-icon "more-horiz"}}
+    {{/paper-button}}
+  {{/menu.trigger}}
+
+  {{#menu.content width=4 as |content|}}
+    {{#content.menu-item onClick="remove"}}
+      {{paper-icon "delete"}}
+      <span>{{t "projects.actions.remove"}}</span>
+    {{/content.menu-item}}
+
+    {{#content.menu-item onClick="openSomething" disabled=true}}
+      {{paper-icon "folder-open"}}
+      <span>{{t "projects.actions.showInFolder"}}</span>
+    {{/content.menu-item}}
+
+    {{#content.menu-item onClick="openSomething" disabled=true}}
+      {{paper-icon "code"}}
+      <span>{{t "projects.actions.openInEditor"}}</span>
+    {{/content.menu-item}}
+  {{/menu.content}}
+{{/paper-menu}}

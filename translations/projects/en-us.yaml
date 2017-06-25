@@ -1,0 +1,10 @@
+projects:
+  labels:
+    projects: "Projects"
+  actions:
+    newProject: "Create new project"
+    newAddon: "Create new addon"
+    import: "Import"
+    remove: "Remove"
+    showInFolder: "Show in folder"
+    openInEditor: "Open in editor"

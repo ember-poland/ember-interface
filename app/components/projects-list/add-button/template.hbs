@@ -1,0 +1,21 @@
+{{#paper-menu as |menu|}}
+  {{#menu.trigger}}
+    {{#paper-button iconButton=true}}
+      {{paper-icon "add"}}
+    {{/paper-button}}
+  {{/menu.trigger}}
+
+  {{#menu.content width=4 as |content|}}
+    {{projects-list/add-button/import content=content}}
+
+    {{#content.menu-item onClick="openSomething" disabled=true}}
+      {{paper-icon "code"}}
+      <span>{{t "projects.actions.newProject"}}</span>
+    {{/content.menu-item}}
+
+    {{#content.menu-item onClick="openSomething" disabled=true}}
+      {{paper-icon "code"}}
+      <span>{{t "projects.actions.newAddon"}}</span>
+    {{/content.menu-item}}
+  {{/menu.content}}
+{{/paper-menu}}
