@@ -26,3 +26,9 @@ body {
     }
   }
 }
+
+.project-list {
+  .project {
+    text-overflow: ellipsis;
+  }
+}
