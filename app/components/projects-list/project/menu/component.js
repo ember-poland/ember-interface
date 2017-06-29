@@ -17,6 +17,11 @@ export default Component.extend({
       let projectPath = this.get('project.path')
       let ideName = this.get('ideName');
       return this.get('terminal').execute(`${ideName} ${projectPath}`);
+    },
+
+    openInDirectory() {
+      let projectPath = this.get('project.path')
+      return this.get('terminal').execute(`nautilus ${projectPath}`)
     }
   }
 });
