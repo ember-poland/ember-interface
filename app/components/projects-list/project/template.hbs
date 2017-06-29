@@ -1,7 +1,7 @@
 {{#paper-card as |card|}}
   {{#card.title as |title|}}
     {{#title.text as |text|}}
-      {{#text.headline class="h5 project"}}
+      {{#text.headline class="h5"}}
         {{shared/inline-input value=project.name onChange=(action 'saveProject')}}
       {{/text.headline}}
       {{#text.subhead}}{{project.version}}{{/text.subhead}}
