@@ -27,8 +27,8 @@ body {
   }
 }
 
-.project-list {
-  .project {
+.project {
     text-overflow: ellipsis;
-  }
+    white-space: nowrap;
+    overflow: hidden;
 }
