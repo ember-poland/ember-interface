@@ -2,7 +2,9 @@
   {{#card.title as |title|}}
     {{#title.text as |text|}}
       {{#text.headline class="h5"}}{{project.name}}{{/text.headline}}
-      {{#text.subhead}}{{project.version}}{{/text.subhead}}
+      {{#text.subhead}}
+        {{commands/ember-version path=project.path}}
+      {{/text.subhead}}
     {{/title.text}}
 
     {{projects-list/project/menu project=project}}
