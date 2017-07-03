@@ -6,7 +6,7 @@ export default Component.extend({
   path: '',
 
   // TODO add some caching later on - it is very heavy operation
-  version: computed('path', 'rootPath', function() {
+  version: computed('path', function() {
     let versionCommand = 'npm list ember-cli | grep ember-cli@ | cut -d"@" -f2';
     return this.get('terminal').execute(`cd ${this.get('path')} && ${versionCommand}`);
   })
