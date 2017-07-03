@@ -1,0 +1,8 @@
+{{#if isEditing}}
+  {{paper-input value=inputValue type=type onChange=(action (mut inputValue)) onBlur=(action "save")}}
+{{else}}
+  {{value}}
+  {{#if isHovering}}
+    <a {{action "edit"}}>{{paper-icon 'mode edit'}}</a>
+  {{/if}}
+{{/if}}
