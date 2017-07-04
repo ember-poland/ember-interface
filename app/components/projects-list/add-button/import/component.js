@@ -1,8 +1,6 @@
 import Ember from 'ember';
 const { Component, inject } = Ember;
 
-const { remote } = requireNode('electron');
-
 export default Component.extend({
   tagName: '',
   interface: inject.service(),

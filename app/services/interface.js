@@ -27,7 +27,7 @@ export default Service.extend({
 
   promptDirectory() {
     return remote.dialog.showOpenDialog({
-      properties: ['openDirectory']
+      properties: ['openDirectory', 'multiSelections']
     });
   }
 });

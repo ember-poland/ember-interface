@@ -1,1 +1,5 @@
-{{version.content}}
+{{#if version.content}}
+  {{version.content}}
+{{else}}
+  {{paper-icon "rotate-right" spin=true}}
+{{/if}}

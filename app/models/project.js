@@ -18,5 +18,10 @@ export default Model.extend({
     }
 
     return this.get('terminal').promiseObjectProxy(promise);
-  }).readOnly()
+  }).readOnly(),
+
+  version: computed.alias('package.version'),
+  dependencies: computed('package.dependencies', 'package.devDependencies', function() {
+    return Ember.assign({}, this.get('package.dependencies'), this.get('package.devDependencies'));
+  })
 });

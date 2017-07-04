@@ -4,7 +4,18 @@
       {{#text.headline class="h5 project"}}
         {{shared/inline-input value=project.name onChange=(action 'saveProject')}}
       {{/text.headline}}
-      {{#text.subhead}}{{project.version}}{{/text.subhead}}
+      {{#text.subhead}}
+        <small>
+          <div class="layout-row layout-xs-column">
+            <div class="flex">
+              Project: {{project.version}}
+            </div>
+            <div class="flex">
+              Ember: {{project.dependencies.ember-cli}}
+            </div>
+          </div>
+        </small>
+      {{/text.subhead}}
     {{/title.text}}
 
     {{projects-list/project/menu project=project}}
