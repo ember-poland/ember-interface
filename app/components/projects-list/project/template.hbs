@@ -5,7 +5,16 @@
         {{shared/inline-input value=project.name onChange=(action 'saveProject')}}
       {{/text.headline}}
       {{#text.subhead}}
-        Ember: {{project.package.devDependencies.ember-cli}}
+        <small>
+          <div class="layout-row layout-xs-column">
+            <div class="flex">
+              Project: {{project.package.version}}
+            </div>
+            <div class="flex">
+              Ember: {{project.package.devDependencies.ember-cli}}
+            </div>
+          </div>
+        </small>
       {{/text.subhead}}
     {{/title.text}}
 
