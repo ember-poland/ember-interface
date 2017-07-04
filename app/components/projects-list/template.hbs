@@ -1,7 +1,7 @@
 {{#paper-sidenav class="md-whiteframe-z2" lockedOpen=true}}
   {{#paper-toolbar as |toolbar|}}
     {{#paper-toolbar-tools class="layout-row layout-align-space-between-center"}}
-      <span>{{t 'projects.labels.projects'}}</span>
+      {{link-to (t 'projects.labels.projects') 'index'}}
       {{projects-list/add-button}}
     {{/paper-toolbar-tools}}
   {{/paper-toolbar}}
