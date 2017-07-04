@@ -5,7 +5,7 @@
         {{shared/inline-input value=project.name onChange=(action 'saveProject')}}
       {{/text.headline}}
       {{#text.subhead}}
-        {{commands/ember-version path=project.path}}
+        Ember: {{project.package.devDependencies.ember-cli}}
       {{/text.subhead}}
     {{/title.text}}
 
