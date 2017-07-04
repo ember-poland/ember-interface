@@ -21,7 +21,7 @@ export default Model.extend({
   }).readOnly(),
 
   version: computed.alias('package.version'),
-  dependecies: computed('package.dependencies', 'package.devDependencies', function() {
+  dependencies: computed('package.dependencies', 'package.devDependencies', function() {
     return Ember.assign({}, this.get('package.dependencies'), this.get('package.devDependencies'));
   })
 });
